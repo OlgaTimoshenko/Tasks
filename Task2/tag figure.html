@@ -1,0 +1,99 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tag figure</title>
+    </head>
+    <body>
+    <h2>Элементы &lt;figure&gt; и &lt;figcaption&gt;</h2>
+    <p>Элемент &lt;figure&gt; используется в сочетании с &lt;figcaption&gt; и предназначен для разметки <br>
+        диаграмм, иллюстраций, фотографий, примеров кода и других вещей. Этот элемент исполь-<br>
+        зуется для группирования любых элементов, например, изображений и подписей к ним. <br>
+        Элемент &lt;figcaption&gt; представляет собой заголовок или описание для &lt;figure&gt;. Данный<br>
+        элемент не обязателен и добавляется до или после содержимого внутри &lt;figure&gt;. Только <br>
+        один &lt;figcaption&gt; может находиться внутри &lt;figure&gt;, при этом сам элемент &lt;figure&gt; <br>
+        может содержать несколько дочерних элементов (например, &lt;img&gt; или &lt;code&gt;).</p>
+    <h2>Использование &lt;figure&gt; и &lt;figcaption&gt;</h2>
+    <ol>
+        <li>&lt;figure&gt; для изображения</li>
+        <p>Изображение в элементе &lt;figure&gt; без подписи:</p>
+        <figure>
+            <img src="cute-cat.jpg" width="215" height="200" title="Cute Cat" alt="Cute Cat"/>
+        </figure>
+        <p>Код для этой картинки такой:</p>
+        <p><code>&lt;figure&gt;<br>
+            &lt;img src="cute-cat.jpg" width="215" height="200" <br>
+            title="Cute Cat" alt="Cute Cat"/&gt;<br>
+            &lt;/figure&gt;
+        </code></p>
+        <li>&lt;figure&gt; с изображением и подписью</li>
+
+        <p>Изображение внутри элемента &lt;figure&gt; с поясняющей подписью:</p>
+        <figure>
+            <img src="cats.jpg" width="230" height="230" title="Cats" alt="Cats"/>
+            <figcaption><i>Котики</i></figcaption>
+        </figure>
+        <p>Код для этой картинки такой:</p>
+        <p><code>&lt;figure&gt;<br>
+            &lt;img src="cats.jpg" width="215" height="200" <br>
+            title="Cats" alt="Cats"/&gt;<br>
+            &lt;figcaption&gt;Котики<br>
+            &lt;/figcaption&gt;<br>
+            &lt;/figure&gt;
+        </code></p>
+
+        <li>&lt;figure&gt; с несколькими изображениями
+            <p>Размещение нескольких изображений внутри одного элемента &lt;figure&gt; <br>
+                с общей подписью:</p>
+            <figure>
+                <img src="cats2.jpg" width="70" height="65" title="yellow Cat" alt="yellow Cat"/>
+                <img src="cats3.jpg" width="90" height="50" title="blue Cat" alt="blue Cat"/>
+                <img src="cats4.jpg" width="70" height="65" title="orange Cat" alt="orange Cat"/>
+                <figcaption><i>Три Котика</i></figcaption>
+            </figure>
+            <p>Код для этой картинки такой:</p>
+            <p><code>&lt;figure&gt;<br>
+                &lt;img src="cats2.jpg" width="70" height="65"<br>
+                title="yellow Cat" alt="yellow Cat"/&gt;<br>
+                &lt;img src="cats3.jpg" width="90" height="50" <br>
+                title="blue Cat" alt="blue Cat"/&gt;<br>
+                &lt;img src="cats4.jpg" width="70" height="65"<br>
+                title="orange Cat" alt="orange Cat"/&gt;<br>
+                &lt;figcaption&gt;Три Котика<br>
+                &lt;/figcaption&gt;<br>
+                &lt;/figure&gt;
+            </code></p>
+
+        <li>&lt;figure&gt; с блоком кода</li>
+        <p>Элемент &lt;figure&gt; может также применяться для примеров кода:</p>
+        <p><img src="Screenshot_1.png" width="415" height="90" title="Code" alt="Code"/></p>
+
+        <p>И код для этого:</p>
+        <p><img src="Screenshot.png" width="405" height="270" title="Code" alt="Code"/></p>
+    </ol>
+    <h2>Плюсы использования</h2>
+    <p>Можно использовать для блоков кода, аудио, видео, графики (возможно, с использованием <br>
+        &lt;canvas&gt; &lt;svg&gt;), стихов или таблиц со статистикой.
+
+    <h2>Минусы использования</h2>
+    <ul>
+        <li>Использование элемента &lt;figure&gt; не всегда целесообразно. Например, <br>
+            графический баннер не стоит размечать в &lt;figure&gt;. Используйте для этого просто<br>
+            &lt;img&gt;.
+        </li>
+        <br>
+        <li>Internet Explorer до версии 8.0 включительно игнорирует тег &lt;figure&gt;, но <br>
+            отображает его содержимое. Также в этом браузере любые стили не применяются <br>
+            к элементу, пока он не создан через скрипт, как показано на рисунке.
+        </li>
+        <p><img src="Screenshot_2.png" width="425" height="480" title="Code" alt="Code"/></p>
+
+        <li>Firefox полностью поддерживает этот тег начиная с версии 4.0, но версии 3.0 <br>
+            и старше также корректно отображают содержимое тега.</li>
+
+        <li> Браузеры Firefox и Chrome автоматически добавляют к &lt;figure&gt; свойство margin <br>
+            со значением 1em 40px.
+        </li>
+    </ul>
+    </body>
+    </html>
