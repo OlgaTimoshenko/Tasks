@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+    border: 3px solid blue;
+}
+
+th {
+    background-color: #888888;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 5px;
+    border: 3px solid blue;
+}
+td:last-child, td:nth-last-child(2) {
+    text-align: center;
+}
+

@@ -1,0 +1,13 @@
+    body {
+        background: url(IMG_5.jpg);
+        background-size: cover;
+        /*значение cover масштабирует изображение с сохранением пропорций так,
+           чтобы его ширина или высота равнялась ширине или высоте блока*/
+        background-position: center top;
+    }
+
+    h1 {
+        text-align: right;
+        color: yellow;
+        margin-right: 20px;
+    }

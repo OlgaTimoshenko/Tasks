@@ -1,0 +1,45 @@
+     body {
+        background: aqua;
+    }
+
+    .border {
+        box-sizing: border-box;
+        width: 100%;
+        background: white;
+        padding: 15px 30px;
+        border: 30px solid #fff;
+        border-image: url("ramka.png") 40 stretch; /* у меня, конечно, не совсем как на рисунке образец верстки */
+    }
+
+    .combination {
+        border: 2px green solid;
+        padding: 20px;
+    }
+
+    .card {
+        width: 140px;
+        height: 190px;
+        display: inline-block;
+        background: url("cards2.png") no-repeat -1px 0;
+    }
+
+    .first-card {
+        background-position: 0px -2327px;
+    }
+
+    .second-card {
+        background-position: -144px -2133px;
+    }
+
+    .third-card {
+        background-position: -289px -1940px;
+    }
+
+    .fourth-card {
+        background-position: -432px -1746px;
+    }
+
+    .fifth-card {
+        background-position: -144px -1551px;
+    }
+
