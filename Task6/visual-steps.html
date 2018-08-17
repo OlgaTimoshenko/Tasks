@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task22</title>
+        <style>
+            ul li {
+                display: inline-block;
+                color: white;
+                float: left;
+                padding: 10px 20px;
+                margin: 20px;
+                text-decoration: none;
+                font: 1pt sans-serif;
+                font-size: 30px;
+                border-radius: 50%;
+                border: 3px solid lightgray;
+
+            }
+
+            li:after {
+                content: '';
+                position: absolute;
+                width: 30%;
+                height: 3px;
+                background-color: #d3d3d3;
+                top: 65px;
+                left: 5%;
+                z-index: -1;
+            }
+
+            .done {
+                background-color: greenyellow;
+            }
+
+            .current {
+                background-color: purple;
+            }
+
+            .next {
+                background: lightgrey;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+    <ul>
+        <li class="done">1</li>
+        <li class="done">2</li>
+        <li class="done">3</li>
+        <li class="current">4</li>
+        <li class="next">5</li>
+    </ul>
+    </body>
+    </html>

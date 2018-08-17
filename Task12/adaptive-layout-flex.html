@@ -1,0 +1,275 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task31.1</title>
+        <style>
+            body {
+                margin: 0 0;
+                font-family: Arial, Helvetica, Verdana, sans-serif;
+                font-size: 15px;
+            }
+
+            .logo {
+                background: grey;
+                height: 25px;
+                width: 130px;
+                color: #ffffff;
+                text-align: center;
+                padding-top: 5px;
+            }
+
+            .header {
+                width: auto;
+                background: lightskyblue;
+                height: 30px;
+            }
+
+            .menu {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .menu li {
+                list-style: none;
+                padding: 0px 15px;
+                margin-top: -40px;
+            }
+
+            .menu li a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+            .main {
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+                color: #000000;
+            }
+
+            .aside_1 {
+                background: #ffff00;
+                text-align: center;
+                padding-top: 5px;
+                flex: 1;
+            }
+
+            .content {
+                background: cyan;
+                padding: 0px 15px 0px 10px;
+                flex: 4;
+            }
+
+            .aside_2 {
+                background: hotpink;
+                text-align: center;
+                padding-top: 5px;
+                flex: 1;
+            }
+
+            .footer {
+                width: 100%;
+                background: #2EE59D;
+                height: 25px;
+                padding-top: 3px;
+            }
+
+            .social {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .social ul {
+                display: flex;
+            }
+
+            .social ul li {
+                list-style: none;
+                padding: 0px 10px;
+                margin-top: -30px;
+
+            }
+
+            .social ul li a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+            .copyright {
+                padding-left: 10px;
+            }
+
+            @media only screen and (max-width: 760px) {
+                .header {
+                    height: 60px;
+                }
+
+                .logo {
+                    margin: auto;
+                }
+
+                .menu {
+                    justify-content: center;
+                    align-items: stretch;
+                    padding: 30px 0 0 0;
+                }
+
+                .menu li {
+                    flex-grow: 1;
+                }
+
+                .main {
+                    flex-wrap: wrap;
+                }
+
+                .content {
+                    order: 1;
+                    flex-basis: 100%;
+                }
+
+                .aside_1 {
+                    order: 2;
+                    align-self: center;
+                    height: 25px;
+                    width: 50%;
+                }
+
+                .aside_2 {
+                    order: 3;
+                    align-self: center;
+                    height: 25px;
+                    width: 50%;
+                }
+
+                .footer {
+                    width: auto;
+                    height: 60px;
+                }
+
+                .copyright {
+                    text-align: center;
+                    margin: auto;
+                }
+
+                .social {
+                    justify-content: center;
+                    padding-top: 40px;
+                }
+
+                .social ul {
+                    margin: 0;
+                    padding: 0;
+                    flex-grow: 1;
+                }
+
+                .social ul li {
+                    flex: 1;
+                    text-align: center;
+
+                }
+            }
+
+            @media only screen and (max-width: 375px) {
+                .header {
+                    height: 200px;
+                }
+
+                .menu {
+                    flex-direction: column;
+                    height: 90%;
+                }
+
+                .menu li {
+                    text-align: center;
+                }
+
+                .content {
+
+                    width: 100%;
+                    align-content: stretch;
+                }
+
+                .aside_1 {
+
+                    flex-direction: row;
+                    flex-basis: 100%;
+                }
+
+                .aside_2 {
+
+                    flex-direction: row;
+                    flex-basis: 100%;
+                }
+
+                .footer {
+                    height: 100%;
+                }
+
+                 .social {
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .social ul {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+                .social ul li {
+                    margin: 0;
+                    padding: 10px 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+    <div class="header">
+        <div class="logo">Logo</div>
+        <ul class="menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Продукты</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="aside_1">Aside type 1</div>
+        <div class="content"><h1>What is Lorem Ipsum?</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                make  a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.</p>
+
+            <h1>Why do we use it?</h1>
+
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+                at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+                packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                purpose (injected humour and the like).</p></div>
+        <div class="aside_2">Aside type 2</div>
+    </div>
+    <div class="footer">
+        <div class="copyright">&copy; Copyright 2017</div>
+        <div class="social">
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Vkontakte</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,155 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task30</title>
+        <style>
+            body {
+                background: #F0EFEE;
+            }
+
+            .run:hover {
+            .block3:hover {
+                transform: rotate(50deg);
+            }
+                }
+
+            div.ease-out {
+                display: inline-block;
+                position: relative;
+                margin: 20px 16px;
+                width: 150px;
+                height: 150px;
+                background: white;
+                box-shadow: 0 0 0 3px rgba(64, 31, 255, 0.16);
+                transition: .2s;
+                animation-timing-function: linear;
+            }
+
+            i {
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                right: 0;
+                bottom: 0;
+                border-radius: 10%;
+                background: mediumvioletred;
+                animation: move 2s infinite;
+            }
+
+            @keyframes move {
+                from {
+                    left: 145px;
+                    bottom: 0px;
+                }
+                to {
+                    left: 0px;
+                    bottom: 145px;
+                }
+            }
+
+            .ease-out i {
+                animation-timing-function: ease-out;
+            }
+
+            i:nth-child(2) {
+                animation-delay: .1s;
+            }
+
+            i:nth-child(3) {
+                animation-delay: .2s;
+            }
+
+            i:nth-child(4) {
+                animation-delay: .3s;
+            }
+
+            i:nth-child(5) {
+                animation-delay: .4s;
+            }
+
+            i:nth-child(6) {
+                animation-delay: .5s;
+            }
+
+            i:nth-child(7) {
+                animation-delay: .6s;
+            }
+
+            i:nth-child(8) {
+                animation-delay: .7s;
+            }
+
+            i:nth-child(9) {
+                animation-delay: .8s;
+            }
+
+            i:nth-child(10) {
+                animation-delay: .9s;
+            }
+
+            .block {
+                width: 150px;
+                height: 150px;
+                border: 1px dotted #2EE59D;
+                margin: 20px 16px;
+                background: rgba(15, 255, 209, 0.26);
+                transition: all 0.5s ease-in-out;
+            }
+
+            .run:hover .block {
+                transform: rotate(720deg);
+            }
+
+            .circle {
+                width: 150px;
+                height: 150px;
+                background: rgba(255, 248, 94, 0.3);
+                border: 1px solid rgba(150, 142, 255, 0.44);
+                border-radius: 50%;
+                box-shadow: rgba(255, 88, 53, 0.51) 0 5px 15px;
+                margin: -370px 250px;
+            }
+
+            .run:hover .circle {
+                background: rgba(255, 176, 203, 0.3);
+            }
+
+            .block2 {
+                width: 150px;
+                height: 150px;
+                border: 1px solid rgba(35, 84, 255, 0.44);
+                margin: 415px 250px;
+                background: rgba(225, 131, 255, 0.26);
+                transition: all 0.5s ease-in-out;
+            }
+
+            .run:hover .block2 {
+                width: 150px;
+                height: 150px;
+                background: rgba(255, 51, 147, 0.3);
+                border: 1px solid rgba(255, 243, 36, 0.44);
+                border-radius: 50%;
+            }
+            .block3 {
+                width: 100px;
+                height: 100px;
+                border: 1px solid rgba(255, 18, 246, 0.44);
+                margin: -760px 480px;
+                background: rgba(18, 255, 56, 0.26);
+            }
+           .run:hover .block3 {
+                transform: rotate(50deg);
+            }
+        </style>
+    </head>
+    <body>
+    <div class="run">
+        <div class="ease-out"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="block"></div>
+        <div class="circle"></div>
+        <div class="block2"></div>
+        <div class="block3"></div>
+    </div>
+    </body>
+    </html>

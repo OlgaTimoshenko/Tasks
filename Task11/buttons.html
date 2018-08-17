@@ -1,0 +1,143 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task29</title>
+        <style>
+            a.button1 {
+                margin: 20px 20px;
+                position: absolute;
+                color: white;
+                font-weight: 700;
+                text-decoration: none;
+                text-shadow: -1px -1px blue;
+                user-select: none;
+                padding: 25px 40px;
+                outline: none;
+                background-color: #800080;
+                background-image: linear-gradient(45deg, rgba(255, 255, 255, .0) 30%, rgba(255, 255, 255, .8),
+                rgba(255, 255, 255, .0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255, 255, 255, .7) 0%,
+                rgba(255, 255, 255, .5) 50%, rgba(0, 0, 0, 0) 50%);
+                background-repeat: no-repeat;
+                background-size: 200% 100%, auto;
+                background-position: 200% 0, 0 0;
+                box-shadow: rgba(0, 0, 0, .3) 0 2px 20px;
+            }
+
+            a.button1:active {
+                top: 10px;
+                box-shadow: none;
+            }
+
+            a.button1:hover {
+                transition: .5s linear;
+                background-position: -200% 0, 0 0;
+            }
+
+            a.button2 {
+                margin: 30px 200px;
+                position: absolute;
+                background-color: #888888;
+                color: lime;
+                font-weight: 300;
+                text-decoration: none;
+                user-select: none;
+                padding: 20px 25px;
+                outline: none;
+                border: 1px solid;
+                border-radius: 15px;
+                transition: 0.2s;
+            }
+
+            a.button2:active {
+                background: white;
+                top: 10px;
+            }
+
+            a.button3 {
+                margin: 20px 370px;
+                text-decoration: none;
+                outline: none;
+                display: inline-block;
+                width: 140px;
+                height: 45px;
+                line-height: 45px;
+                border-radius: 45px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 11px;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 1px;
+                font-weight: 600;
+                color: #524f4e;
+                background: white;
+                box-shadow: 0 15px 12px rgba(0, 0, 0, .1);
+                transition: .5s;
+            }
+
+            a.button3:hover {
+                background: #2EE59D;
+                box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+                color: white;
+                transform: translateY(-7px);
+            }
+
+            .button4 {
+                position: absolute;
+                background-color: white;
+                color: black;
+                border: 2px solid #4CAF50;
+                padding: 16px 42px;
+                text-align: center;
+                display: inline-block;
+                font-size: 20px;
+                margin: 25px -300px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+
+            .button4:hover {
+                background-color: cornflowerblue;
+                color: white;
+            }
+
+            .button4:active {
+                top: 3px;
+            }
+
+            .button5 {
+                margin: 20px -100px;
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 24px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: #ffffff;
+                background-color: #f6c6ff;;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 5px #999;
+            }
+
+            .button5:hover {
+                background-color: #FF69B4;
+            }
+
+            .button5:active {
+                background-color: #FF69B4;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+        </style>
+    </head>
+    <body>
+    <a href="#" class="button1">Button1</a>
+    <a href="#" class="button2">Button2</a>
+    <a href="#" class="button3">Button3</a>
+    <button class="button4">Button4</button>
+    <button class="button5">Button5</button>
+    </body>
+    </html>

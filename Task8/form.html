@@ -1,0 +1,59 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Task25</title>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                body {
+                    width: 670px;
+                    padding: 35px 45px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: black;
+                    border: 50px solid lightgrey;
+                }
+
+                input {
+                    width: 300px;
+                    height: 25px;
+                    padding: 10px 5px 3px 5px;
+                    font-size: 14px;
+                }
+
+                .send {
+                    margin: 20px 0px 40px 0px;
+                    width: 100px;
+                    height: 30px;
+                    padding: 5px 5px 0px 5px;
+                    font-size: 14px;
+                }
+            </style>
+        </head>
+        <body>
+        <h1>Обратная связь</h1>
+        <p>Имя:</p>
+        <form action="URL" method="post">
+            <label>
+                <input type="text name" name="username" placeholder="Введите ваше имя">
+            </label>
+            <p>Ваш e-mail:</p>
+            <label>
+                <input type="email" name="e-mail" placeholder="Введите адрес Вашей почты">
+            </label>
+            <p>Ваш телефон:</p>
+            <label>
+                <input type="tel" name="phone" placeholder="Введите номер телефона">
+            </label>
+            <p>Сообщение:</p>
+            <label>
+                <textarea name="comment" placeholder="Текст сообщения..." rows="7" cols="90"></textarea>
+            </label><br>
+            <input type="submit" class="send" value="Отправить">
+        </form>
+        </body>
+        </html>
