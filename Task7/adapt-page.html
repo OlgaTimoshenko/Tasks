@@ -5,32 +5,41 @@
         <title>Task24</title>
         <style>
             body {
-                margin: 0 0;
+                margin: 0;
                 font-family: Verdana, Helvetica, Arial, sans-serif;
             }
 
-            #news, .text {
-                max-width: 980px;
-                margin: auto;
+            .pic {
+                text-align: center;
             }
 
-            header h1 {
-                margin-top: -3px;
-                padding-top: 30px;
-                height: 80px;
-                background-color: darkgray;
-                text-align: center;
+            #news {
+                display: block;
+                max-width: 980px;
+                margin: auto;
+                height: auto;
+
+            }
+
+            .text {
+                display: block;
+                max-width: 980px;
+                margin: auto;
+                height: auto;
+                padding-bottom: 50px;
+
             }
 
             header {
                 text-align: center;
-                width: 100%;
-
-            }
-
-            #news {
+                box-sizing: border-box;
                 margin: auto;
-                width: 980px;
+                width: 100%;
+                padding-top: 1px;
+                background-color: darkgray;
+                height: 85px;
+                min-height: 85px;
+
             }
 
             .block1, .block2, .block3, .block4 {
@@ -54,45 +63,79 @@
 
             }
 
-            footer {
-                height: 40px;
+            .footer {
+                box-sizing: border-box;
+                height: 85px;
+                max-height: 85px;
                 width: 100%;
                 background-color: cornflowerblue;
-                padding: 9px 0px 13px 0px;
-                margin: 50px 0px 0px 0px;
+
+            }
+
+            .copyright {
+                display: block;
+                max-width: 980px;
+                margin: auto;
                 color: white;
-
-
+                padding: 25px 15px 0 0;
             }
 
             @media only screen and (max-width: 768px) {
                 body {
-                    max-width: 320px;
+                    min-width: 320px;
                     padding: 0;
-                    margin: auto;
-                }
-
-                .block1, .block2, .block3, .block4, .next {
-                    text-align: center;
-                    width: 980px;
-                    float: none;
                 }
 
                 #news {
                     width: 100%;
+                    min-width: 320px;
+                    box-sizing: border-box;
+                    padding: 0 10px 0 10px;
+                }
+
+                .block1, .block2, .block3, .block4 {
+                    float: none;
+                    width: 100%;
+                    min-width: 320px;
+                    padding: 0;
+                    margin: 0 0;
+
+                }
+
+                .next {
+                    width: 100%;
+                    min-width: 320px;
+                    box-sizing: border-box;
+                    padding: 15px 10px 20px 10px;
+                    margin-left: 0;
+                }
+
+                .pic {
+                    max-width: 80%;
+                    margin: 0 auto;
                 }
 
                 img {
-                    max-width: 320px;
+                    width: 100%;
+                    height: auto;
                 }
 
+                .text {
+                    padding: 10px 0 50px 10px;
+
+                }
+
+                .copyright {
+                    padding-left: 10px;
+                }
             }
         </style>
     </head>
     <body>
+
+    <div class="pic"><img src="task24_big.jpg"></div>
     <header>
-        <div><img src="task24_big.jpg"></div>
-        <h1 style="text-align: center">Lorem ipsum</h1>
+        <h1>Lorem ipsum</h1>
     </header>
     <div id="news">
         <div class="block1">
@@ -117,64 +160,79 @@
             <p class="next">Читать далее</p>
         </div>
     </div>
-<div class="text">
-    <h1>История происхождения</h1>
-    <p>Lorem ipsum dolor sit amet... Если вы как-то связаны с дизайном, наверняка вы видели эту фразу сотни раз. Известная
-        как «рыба» или «латинская заготовка», она используется для имитации текстового наполнения сайта, лендига, рекламы
-        или продукта, чтобы дизайнерам не приходилось ждать готового контента, а клиенты не отвлекались от графической
-        реализации на чтение непонятного текста:
+    <div class="text">
+        <h2>История происхождения</h2>
+        <p>Lorem ipsum dolor sit amet... Если вы как-то связаны с дизайном, наверняка вы видели эту фразу сотни раз.
+            Известная
+            как «рыба» или «латинская заготовка», она используется для имитации текстового наполнения сайта, лендига,
+            рекламы
+            или продукта, чтобы дизайнерам не приходилось ждать готового контента, а клиенты не отвлекались от графической
+            реализации на чтение непонятного текста:
 
-        «Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.»
+            «Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.»
 
-        Однако, несмотря
-        на повсеместное распространение, Lorem Ipsum вызывает немало споров. В чем же секрет его популярности, и откуда
-        вообще пошла эта традиция?</p>
+            Однако, несмотря
+            на повсеместное распространение, Lorem Ipsum вызывает немало споров. В чем же секрет его популярности, и откуда
+            вообще пошла эта традиция?</p>
 
-    <h1>Стандарт качества</h1>
-    <p>Дело в том, что Lorem Ipsum — это стандарт, который возник еще очень давно, и секрет его магической привлекательности
-        прост: он выдуман лишь отчасти. Этот, казалось бы, «фальшивый» текст на самом деле имеет смысл, и перед тем, как
-        попасть на экран вашего браузера, он прошел долгий путь развития. Однажды выйдя из-под пера римского философа, он
-        претерпел значительные изменения в средние века, когда один из «дизайнеров» того времени — наборщик текста на
-        печатном станке — сознательно перепутал все его содержимое.</p>
+        <h2>Стандарт качества</h2>
+        <p>Дело в том, что Lorem Ipsum — это стандарт, который возник еще очень давно, и секрет его магической
+            привлекательности
+            прост: он выдуман лишь отчасти. Этот, казалось бы, «фальшивый» текст на самом деле имеет смысл, и перед тем, как
+            попасть на экран вашего браузера, он прошел долгий путь развития. Однажды выйдя из-под пера римского философа,
+            он
+            претерпел значительные изменения в средние века, когда один из «дизайнеров» того времени — наборщик текста на
+            печатном станке — сознательно перепутал все его содержимое.</p>
 
-    <h1>Что он означает?</h1>
-    <p>Официальная версия гласит: в первом веке до нашей эры жил человек по имени Марк Туллий Цицерон —
-        юрист, политик, философ и очень хороший оратор. Среди его работ есть одна, которая называется De Finibus Bonorum et
-        Malorum («О пределах блага и зла») и
-        датируется 45 годом до н.э. Ее текст содержит следующие слова:
+        <h2>Что он означает?</h2>
+        <p>Официальная версия гласит: в первом веке до нашей эры жил человек по имени Марк Туллий Цицерон —
+            юрист, политик, философ и очень хороший оратор. Среди его работ есть одна, которая называется De Finibus Bonorum
+            et
+            Malorum («О пределах блага и зла») и
+            датируется 45 годом до н.э. Ее текст содержит следующие слова:
 
-        «Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.»
+            «Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+            numquam
+            eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.»
 
-        Что в переводе с латинского означает:
+            Что в переводе с латинского означает:
 
-        «Равно как нет никого, кто возлюбил бы, предпочел и возжаждал бы само страдание только за то, что это страдание, а
-        не потому, что иной раз возникают такие обстоятельства, когда страдания и боль приносят некое и немалое
-        наслаждение.»
+            «Равно как нет никого, кто возлюбил бы, предпочел и возжаждал бы само страдание только за то, что это страдание,
+            а
+            не потому, что иной раз возникают такие обстоятельства, когда страдания и боль приносят некое и немалое
+            наслаждение.»
 
-        Как вы видите, большинство слов этого отрывка De Finibus легко узнаваемы: именно он, по мнению экспертов, лежит в
-        основе фрагмента Lorem Ipsum. </p>
+            Как вы видите, большинство слов этого отрывка De Finibus легко узнаваемы: именно он, по мнению экспертов, лежит
+            в
+            основе фрагмента Lorem Ipsum. </p>
 
-    <h1>От античности до наших дней</h1>
-    <p>Несмотря на все сопротивление, имя Цицерона не было забыто, а его слова оказали огромное влияние на умы человечества.
-        Получается, что на протяжении всего этого времени идеи Цицерона жили среди нас.
-        Профессор Ричард МакКлинток (Richard McClintock), изучающий латынь, утверждает, что именно это сыграло значительную
-        роль в том, как Lorem Ipsum превратился в текстовую заготовку. Он провел исследование и выяснил, что часть слов
-        «рыбы» была взята из оригинального латинского De Finibus Цицерона, после чего остальная часть была трансформирована.
-        Как уже упоминалось, в средние века наборщик текста был одновременно и типографом — именно он создавал образцы
-        шрифтов для книг, чтобы проиллюстрировать различные начертания. У одного из них возникла идея, что если лишить текст
-        какого-либо смысла, то ничто не будет отвлекать зрителя от его графического исполнения. В результате, взяв
-        находившуюся под рукой страницу книги на небиблейской латыни — Цицерона — он превратил ее в полную тарабарщину:
-        латинское слово «боль» или «страдание» dolorem стало несуществующим «lorem», и так родился ныне всем известный
-        абзац</p>
-</div>
-    <footer>
-        <p> &copy; Копирайт
+        <h2>От античности до наших дней</h2>
+        <p>Несмотря на все сопротивление, имя Цицерона не было забыто, а его слова оказали огромное влияние на умы
+            человечества.
+            Получается, что на протяжении всего этого времени идеи Цицерона жили среди нас.
+            Профессор Ричард МакКлинток (Richard McClintock), изучающий латынь, утверждает, что именно это сыграло
+            значительную
+            роль в том, как Lorem Ipsum превратился в текстовую заготовку. Он провел исследование и выяснил, что часть слов
+            «рыбы» была взята из оригинального латинского De Finibus Цицерона, после чего остальная часть была
+            трансформирована.
+            Как уже упоминалось, в средние века наборщик текста был одновременно и типографом — именно он создавал образцы
+            шрифтов для книг, чтобы проиллюстрировать различные начертания. У одного из них возникла идея, что если лишить
+            текст
+            какого-либо смысла, то ничто не будет отвлекать зрителя от его графического исполнения. В результате, взяв
+            находившуюся под рукой страницу книги на небиблейской латыни — Цицерона — он превратил ее в полную тарабарщину:
+            латинское слово «боль» или «страдание» dolorem стало несуществующим «lorem», и так родился ныне всем известный
+            абзац</p>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">&copy; Копирайт
             <time datetime="2017">2017</time>
-        </p>
-    </footer>
+        </div>
+        <div>
     </body>
     </html>

@@ -1,94 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Task_16.2</title>
-    <style>
-        .title {
-            background-color: lightblue;
-            height: 20px;
-            font-size: 23px;
-            padding: 10px;
-            color: blue;
-            text-align: center;
-        }
-        .menu {
-            width: 250px;
-            height: 221px;
-            background-color: khaki;
-            float: left;
-        }
-        .types {
-            padding-left: 25px;
-            min-width: 250px;
-        }
-        .football {
-            background-color: #ffffff;
-            background-image: url(ball.png);
-            background-position: right;
-            background-repeat: repeat-y;
-            min-width: 900px;
-        }
-        .pic {
-            float: left;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-       .text {
-           padding-left: 20px;
-       }
-           h2 {
-               text-align: center;
-           }
-
-        .participation {
-            background-color: lightblue;
-            height: 40px;
-            font-size: 23px;
-            padding: 15px;
-            color: blue;
-            text-align: center;
-            margin-top: 30px;
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <title>Task_16.2</title>
+                <style>
+                    body {
+                        margin: 0;
                     }
-    </style>
-</head>
-<body>
-<div class="title">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</div>
-<div class="menu">
-    <h3 class="types">Виды спорта:</h3>
-    <ul>
-        <li>
-            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82"
-               target="_blank">конькобежный спорт</a></li>
-        <li><a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD" target="_blank">биатлон</a>
-        </li>
-        <li><a href="https://www.championat.com/football/" target="_blank">футбол</a></li>
-        <li><a href="http://archeryclub.by/trenirovki/nachat-strelyat/" target="_blank">стрельба из лука</a>
-        </li>
-        <li>
-            <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B4%D0%BB%D0%B8%D0%BD%D1%83"
-               target="_blank">прыжки в длину</a></li>
-        <li>
-            <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83"
-               target="_blank">прыжки в высоту</a></li>
-    </ul>
-</div>
-<div class="football">
-    <h2>ФУТБОЛ</h2>
-    <p class="pic"><img src="t16.png"></p>
-    <p class="text">Футбол - комадный вид спорта, в котором целью является забить мяч в ворота соперника ногами
-        или другими частями тела
-        (кроме рук) большее количество раз, чем команда соперника. </p>
+                    .header {
+                        box-sizing: border-box;
+                        background-color: lightblue;
+                        height: 10vh;
+                        min-height: 10vh;
+                        font-size: 23px;
+                        padding: 22px;
+                        color: blue;
+                        text-align: center;
+                    }
+                    .menu {
+                        width: 250px;
+                        background-color: khaki;
+                        float: left;
+                        min-height: 80vh;
+                    }
 
-    <p class="text">Есть 17 официальных правил правил игры, каждое из которых содержит список оговорок и
-        руководящих принципов.
-        Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для
-        таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями.
-        Законы очень часто формулировались в общих чертах, которые позволяют упростить их применения в
-        зависимости
-        от характера игры.</p>
-</div>
-<div class="participation">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
-</body>
-</html>
+                    .types {
+                        padding-left: 25px;
+
+                    }
+                    .football {
+                        float: right;
+                        background-color: #ffffff;
+                        background-image: url(ball.png);
+                        background-position: right;
+                        background-repeat: repeat-y;
+                        width: calc(100% - 250px);
+                        height: 80vh;
+                    }
+                    .pic {
+
+                        padding: 0 20px 0 20px;
+                        margin: 0 0;
+                        float: left;
+                    }
+
+                       h2 {
+                           text-align: left;
+                           padding-left: 200px;
+                       }
+
+                    .footer {
+                        clear: both;
+                        width: 100vw;
+                        box-sizing: border-box;
+                        background-color: lightblue;
+                        height: 10vh;
+                        min-height: 10vh;
+                        font-size: 23px;
+                        padding: 25px;
+                        color: blue;
+                        text-align: center;
+
+                                }
+                    .text {
+                        padding: 0px 15px 18px 19px;
+                    }
+
+
+                </style>
+            </head>
+            <body>
+            <div class="header">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</div>
+            <div class="menu">
+                <h3 class="types">Виды спорта:</h3>
+                <ul>
+                    <li>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82"
+                           target="_blank">конькобежный спорт</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD" target="_blank">биатлон</a>
+                    </li>
+                    <li><a href="https://www.championat.com/football/" target="_blank">футбол</a></li>
+                    <li><a href="http://archeryclub.by/trenirovki/nachat-strelyat/" target="_blank">стрельба из лука</a>
+                    </li>
+                    <li>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B4%D0%BB%D0%B8%D0%BD%D1%83"
+                           target="_blank">прыжки в длину</a></li>
+                    <li>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83"
+                           target="_blank">прыжки в высоту</a></li>
+                </ul>
+            </div>
+            <div class="football">
+                <h2>ФУТБОЛ</h2>
+                <p class="pic"><img src="t16.png"></p>
+                <p class="text">Футбол - комадный вид спорта, в котором целью является забить мяч в ворота соперника ногами
+                    или другими частями тела
+                    (кроме рук) большее количество раз, чем команда соперника. </p>
+
+                <p class="text">Есть 17 официальных правил правил игры, каждое из которых содержит список оговорок и
+                    руководящих принципов.
+                    Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для
+                    таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями.
+                    Законы очень часто формулировались в общих чертах, которые позволяют упростить их применения в
+                    зависимости
+                    от характера игры.</p>
+            </div>
+            <div class="footer">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
+            </body>
+            </html>

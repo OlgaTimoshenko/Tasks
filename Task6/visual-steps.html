@@ -4,12 +4,23 @@
         <meta charset="UTF-8">
         <title>Task22</title>
         <style>
+            div {
+                position: relative;
+                display: block;
+                height: 15vh;
+                width: 70vh;
+
+            }
+            ul {
+                position: absolute;
+            }
+
             ul li {
-                display: inline-block;
+                display: block;
                 color: white;
                 float: left;
                 padding: 10px 20px;
-                margin: 20px;
+                margin: 10px;
                 text-decoration: none;
                 font: 1pt sans-serif;
                 font-size: 30px;
@@ -21,11 +32,11 @@
             li:after {
                 content: '';
                 position: absolute;
-                width: 30%;
-                height: 3px;
+                width: 86%;
+                height: 2px;
                 background-color: #d3d3d3;
-                top: 65px;
-                left: 5%;
+                top: 42px;
+                left: 11%;
                 z-index: -1;
             }
 
@@ -44,6 +55,7 @@
         </style>
     </head>
     <body>
+    <div class="steps">
     <ul>
         <li class="done">1</li>
         <li class="done">2</li>
@@ -51,5 +63,6 @@
         <li class="current">4</li>
         <li class="next">5</li>
     </ul>
+    </div>
     </body>
     </html>
