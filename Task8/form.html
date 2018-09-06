@@ -5,19 +5,21 @@
             <title>Task25</title>
             <style>
                 body {
-                    margin: 0;
+                    margin: 30px auto;
                     padding: 0;
-                }
+                    background-color: lightgrey;
 
-                body {
-                    width: 670px;
-                    padding: 35px 45px;
-                    font-size: 16px;
-                    line-height: 1.5;
                     color: black;
-                    border: 50px solid lightgrey;
                 }
-
+form {
+    width: 650px;
+    margin: auto;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 25px 0px 0px 45px;
+}
                 input {
                     width: 300px;
                     height: 25px;
@@ -25,19 +27,22 @@
                     font-size: 14px;
                 }
 
-                .send {
+                .button {
                     margin: 20px 0px 40px 0px;
                     width: 100px;
-                    height: 30px;
-                    padding: 5px 5px 0px 5px;
+                    padding: 5px 0 5px 0;
                     font-size: 14px;
+                }
+                textarea {
+                    resize: none;
                 }
             </style>
         </head>
         <body>
-        <h1>Обратная связь</h1>
-        <p>Имя:</p>
         <form action="URL" method="post">
+        <p>Обратная связь</p>
+        <p>Имя:</p>
+
             <label>
                 <input type="text name" name="username" placeholder="Введите ваше имя">
             </label>
@@ -51,9 +56,10 @@
             </label>
             <p>Сообщение:</p>
             <label>
-                <textarea name="comment" placeholder="Текст сообщения..." rows="7" cols="90"></textarea>
+                <textarea name="comment" placeholder="Текст сообщения..." rows="7" cols="80"></textarea>
             </label><br>
-            <input type="submit" class="send" value="Отправить">
+
+                <button type="submit" class="button">Отправить</button>
         </form>
         </body>
         </html>
